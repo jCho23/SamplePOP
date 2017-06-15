@@ -1,3 +1,14 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{D9601529-AAB6-4370-8BC5-7BB8D8969F63}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/AppInitializer.cs">
+    <Files>
+      <File FileName="SamplePOP/AppInitializer.cs" Line="38" Column="93" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SamplePOP PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
