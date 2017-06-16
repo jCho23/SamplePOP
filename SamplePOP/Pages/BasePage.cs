@@ -17,12 +17,5 @@ namespace SamplePOP
             OniOS = platform == Platform.iOS;
         }
 
-
-
-        public void EnterTextAndPressEnter(string text)
-        {
-           
-        }
-
     }
 }

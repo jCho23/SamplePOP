@@ -17,5 +17,13 @@ namespace SamplePOP
         public WelcomePage(IApp app, Platform platform) : base(app, platform)
         {
         }
+
+
+
+
+		public void GetStartedButton(string text)
+		{
+
+		}
     }
 }

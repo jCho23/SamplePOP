@@ -1,17 +1,10 @@
 ﻿<Properties StartupConfiguration="{D9601529-AAB6-4370-8BC5-7BB8D8969F63}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/Pages/BasePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/Pages/WelcomePage.cs">
     <Files>
       <File FileName="SamplePOP/AppInitializer.cs" Line="19" Column="73" />
       <File FileName="SamplePOP/Pages/BasePage.cs" Line="22" Column="55" />
       <File FileName="SamplePOP/Pages/WelcomePage.cs" Line="22" Column="1" NotebookId="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="SamplePOP" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
