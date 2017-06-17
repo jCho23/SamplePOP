@@ -12,6 +12,7 @@ namespace SamplePOP
     {
         readonly Query emailField;
         readonly Query nextButton;
+        readonly Query backButton;
 
         public EmailPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -19,6 +20,7 @@ namespace SamplePOP
             {
                 emailField = x => x.Marked("login_username");
                 nextButton = x => x.Marked("button_label");
+                //backButton = x => x.Marked();
 
             }
 
@@ -26,6 +28,7 @@ namespace SamplePOP
             {
                 emailField = x => x.Marked("Email Address");
                 nextButton = x => x.Marked("Next");
+                backButton = x => x.Marked("Back");
             }
 
         }
