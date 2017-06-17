@@ -15,6 +15,7 @@ namespace SamplePOP
 		readonly Query nextButton;
 		readonly Query backButton;
         readonly Query dialogEmailConfirmationYesButton;
+        readonly Query progressIndicator;
 
         public LoginPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -25,6 +26,7 @@ namespace SamplePOP
 				nextButton = x => x.Marked("button_label");
 				//backButton = x => x.Marked();
                 dialogEmailConfirmationYesButton = x => x.Marked("button1");
+                progressIndicator = x => x.Marked("progress");
 			}
 
             if (OniOS)
@@ -81,11 +83,11 @@ namespace SamplePOP
 			App.EnterText(passwordField, password);
             App.Screenshot("We 'Entered' our password");
 
-			app.DismissKeyboard();
-			app.Screenshot("We have entered our users credentials");
+			App.DismissKeyboard();
+            App.Screenshot("Dismissed Keyboard");
 
-			app.Tap(nextButton);
-			app.WaitForNoElement(progressIndicator);
+			App.Tap(nextButton);
+			App.WaitForNoElement(progressIndicator);
 
 		}
 
