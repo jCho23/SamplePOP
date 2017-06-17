@@ -76,7 +76,7 @@ namespace SamplePOP
             }
         }
 
-        public void EnterExsistingUser(string username, string password)
+        public void EnterExsistingUser(string password)
         {
             App.ClearText();
             App.EnterText(passwordField, password);
