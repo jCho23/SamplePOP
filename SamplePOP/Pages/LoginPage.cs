@@ -24,6 +24,7 @@ namespace SamplePOP
 				passwordField = x => x.Marked("login_password");
 				nextButton = x => x.Marked("button_label");
 				//backButton = x => x.Marked();
+                dialogEmailConfirmationYesButton = x => x.Marked("button1");
 			}
 
             if (OniOS)
@@ -44,6 +45,15 @@ namespace SamplePOP
 				App.EnterText(passwordField, password);
 				App.DismissKeyboard();
 				App.Screenshot("We have 'Entered' our New User Password");
+
+				App.Tap(nextButton);
+				App.Screenshot("Then we 'Tapped' the 'Next' Button");
+
+				App.WaitForElement(dialogEmailConfirmationYesButton);
+				App.Screenshot("Email Confirmaiton popup should appear");
+
+				App.Tap(dialogEmailConfirmationYesButton);
+				App.Screenshot("Next we 'Tapped' on the 'Yes' Button");
             }
 
             if (OniOS)
