@@ -35,13 +35,26 @@ namespace SamplePOP
             App.WaitForElement(emailField);
             App.Tap(emailField);
             App.Screenshot("MileIQ Email Entry Field");
+
+            App.EnterText(emailField, username);
+            App.DismissKeyboard();
+            App.Screenshot("Entered in our Existing Email");
+
             App.Tap(nextButton);
             App.Screenshot("Tapped the 'Next' Button");
         }
 
-        public void CreateNewUser (string username, string password)
+        public void EnterNewEmail (string username)
         {
-            
+			App.Tap(emailField);
+			App.Screenshot("MileIQ Email Entry Field");
+
+			App.EnterText(emailField, username);
+			App.DismissKeyboard();
+			App.Screenshot("Entered in New Email");
+
+			App.Tap(nextButton);
+			App.Screenshot("Tapped the 'Next' Button");
         }
 
     }
