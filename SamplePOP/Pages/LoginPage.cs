@@ -19,7 +19,9 @@ namespace SamplePOP
         {
             if (OnAndroid)
             {
-                
+				emailField = x => x.Marked("login_username");
+				passwordField = x => x.Marked("login_password");
+				nextButton = x => x.Marked("button_label");
             }
 
             if (OniOS)
