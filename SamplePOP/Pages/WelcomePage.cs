@@ -10,20 +10,33 @@ namespace SamplePOP
 {
     public class WelcomePage : BasePage
     {
-		readonly Query backButton;
-		readonly Query locationAlertContinueBtn;
-		readonly Query notificationsAllowBtn;
+        readonly Query getStartedBtn;
 
         public WelcomePage(IApp app, Platform platform) : base(app, platform)
         {
-        }
+            if (OnAndroid)
+            {
+                
+            }
+
+            if (OniOS)
+            {
+               getStartedBtn = x => x.Marked("Get Started"); 
+            }
+           
 
 
 
-
-		public void GetStartedButton(string text)
-		{
 
 		}
+
+
+
+
+
+        public void GetStartedButton(string text)
+        {
+
+        }
     }
 }
