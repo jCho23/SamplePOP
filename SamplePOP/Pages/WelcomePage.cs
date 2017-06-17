@@ -24,19 +24,13 @@ namespace SamplePOP
                getStartedBtn = x => x.Marked("Get Started"); 
             }
            
-
-
-
-
 		}
 
-
-
-
-
-        public void GetStartedButton(string text)
+        public void TapGetStartedButton(string text)
         {
-
+            App.ClearText();
+            App.Tap(getStartedBtn);
+            App.Screenshot("Tapped the 'Get Started' Button");
         }
     }
 }
