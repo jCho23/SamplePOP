@@ -29,6 +29,7 @@ namespace SamplePOP
 				emailField = x => x.Marked("Email Address");
 				passwordField = x => x.Marked("Password");
                 nextButton = x => x.Marked("Next");
+				backButton = x => x.Marked("Back");
 
             }
 
