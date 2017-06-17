@@ -10,6 +10,9 @@ namespace SamplePOP
 {
     public class EmailPage : BasePage
     {
+        readonly Query emailField;
+        readonly Query nextButton;
+
         public EmailPage(IApp app, Platform platform) : base(app, platform)
         {
         }
