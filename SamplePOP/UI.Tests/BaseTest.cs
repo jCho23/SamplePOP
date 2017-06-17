@@ -13,7 +13,10 @@ namespace UITestSampleApp.UITests
 		protected IApp App;
 		protected Platform Platform;
 
-        protected BasePage BasePage;
+        protected WelcomePage WelcomePage;
+        protected EmailPage EmailPage;
+
+
 	
 
 		protected BaseTest(Platform platform) => Platform = platform;
@@ -24,12 +27,11 @@ namespace UITestSampleApp.UITests
 			App = AppInitializer.StartApp(Platform);
 			App.Screenshot("App Initialized");
 
-			FirstPage = new FirstPage(App, Platform);
-			ListPage = new ListPage(App, Platform);
-			LoginPage = new LoginPage(App, Platform);
-			NewUserSignUpPage = new NewUserSignUpPage(App, Platform);
+            WelcomePage = new WelcomePage(App, Platform);
+            EmailPage = new EmailPage(App, Platform);
+		
 
-			LoginPage.WaitForLoginScreen();
+		
 		}
 	}
 }
