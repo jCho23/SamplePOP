@@ -22,7 +22,8 @@ namespace SamplePOP
 				emailField = x => x.Marked("login_username");
 				passwordField = x => x.Marked("login_password");
 				nextButton = x => x.Marked("button_label");
-            }
+				//backButton = x => x.Marked();
+			}
 
             if (OniOS)
             {
@@ -30,9 +31,15 @@ namespace SamplePOP
 				passwordField = x => x.Marked("Password");
                 nextButton = x => x.Marked("Next");
 				backButton = x => x.Marked("Back");
-
             }
-
         }
-    }
+
+        public void CreateNewUser (string username, string password)
+        {
+            
+        }
+
+
+
+	}
 }
