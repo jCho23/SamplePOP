@@ -15,6 +15,19 @@ namespace SamplePOP
 
         public EmailPage(IApp app, Platform platform) : base(app, platform)
         {
+            if (OnAndroid)
+            {
+                
+            }
+
+            if (OniOS)
+            {
+                emailField = x => x.Marked("Email Address");
+                nextButton = x => x.Marked("Next");
+            }
+
         }
+
+
     }
 }
