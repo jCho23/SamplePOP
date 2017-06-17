@@ -38,9 +38,10 @@ namespace SamplePOP
         {
             if (OnAndroid)
             {
-                
+				App.EnterText(passwordField, password);
+				App.DismissKeyboard();
+				App.Screenshot("We have entered our users credentials");
             }
-
 
             if (OniOS)
             {
