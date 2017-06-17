@@ -15,9 +15,8 @@ namespace UITestSampleApp.UITests
 
         protected WelcomePage WelcomePage;
         protected EmailPage EmailPage;
+        protected LoginPage LoginPage;
 
-
-	
 
 		protected BaseTest(Platform platform) => Platform = platform;
 
@@ -29,9 +28,7 @@ namespace UITestSampleApp.UITests
 
             WelcomePage = new WelcomePage(App, Platform);
             EmailPage = new EmailPage(App, Platform);
-		
-
-		
+            LoginPage = new LoginPage(App, Platform);
 		}
 	}
 }
