@@ -36,7 +36,18 @@ namespace SamplePOP
 
         public void CreateNewUser (string username, string password)
         {
-            
+            if (OnAndroid)
+            {
+                
+            }
+
+
+            if (OniOS)
+            {
+				App.EnterText(passwordField, password);
+				App.DismissKeyboard();
+				App.Screenshot("We have entered our users credentials");
+            }
         }
 
 
