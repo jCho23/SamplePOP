@@ -10,8 +10,10 @@ namespace SamplePOP
 {
     public class LoginPage : BasePage
     {
-
-
+		readonly Query emailField;
+        readonly Query passwordField;
+		readonly Query nextButton;
+		readonly Query backButton;
 
         public LoginPage(IApp app, Platform platform) : base(app, platform)
         {
