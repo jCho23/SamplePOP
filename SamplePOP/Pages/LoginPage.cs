@@ -75,6 +75,19 @@ namespace SamplePOP
         }
 
 
+		public void EnterExsistingUser(string username, string password)
+		{
+            App.ClearText();
+			App.EnterText(passwordField, password);
+            App.Screenshot("We 'Entered' our password");
+
+			app.DismissKeyboard();
+			app.Screenshot("We have entered our users credentials");
+
+			app.Tap(nextButton);
+			app.WaitForNoElement(progressIndicator);
+
+		}
 
 	}
 }
