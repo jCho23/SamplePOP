@@ -38,6 +38,7 @@
     <Compile Include="AppInitializer.cs" />
     <Compile Include="Pages\WelcomePage.cs" />
     <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\EmailPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
