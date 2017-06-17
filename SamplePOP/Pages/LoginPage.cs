@@ -14,6 +14,7 @@ namespace SamplePOP
         readonly Query passwordField;
 		readonly Query nextButton;
 		readonly Query backButton;
+        readonly Query dialogEmailConfirmationYesButton;
 
         public LoginPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -31,6 +32,7 @@ namespace SamplePOP
 				passwordField = x => x.Marked("Password");
                 nextButton = x => x.Marked("Next");
 				backButton = x => x.Marked("Back");
+                dialogEmailConfirmationYesButton = x => x.Marked("Yes");
             }
         }
 
@@ -38,16 +40,27 @@ namespace SamplePOP
         {
             if (OnAndroid)
             {
+                App.ClearText();
 				App.EnterText(passwordField, password);
 				App.DismissKeyboard();
-				App.Screenshot("We have entered our users credentials");
+				App.Screenshot("We have 'Entered' our New User Password");
             }
 
             if (OniOS)
             {
+                App.ClearText();
 				App.EnterText(passwordField, password);
 				App.DismissKeyboard();
-				App.Screenshot("We have entered our users credentials");
+				App.Screenshot("We have 'Entered' our New User Password");
+
+				App.Tap(nextButton);
+                App.Screenshot("Then we 'Tapped' the 'Next' Button");
+
+				App.WaitForElement(dialogEmailConfirmationYesButton);
+				App.Screenshot("Email Confirmaiton popup should appear");
+
+				App.Tap(dialogEmailConfirmationYesButton);
+                App.Screenshot("Next we 'Tapped' on the 'Yes' Button");
             }
         }
 
