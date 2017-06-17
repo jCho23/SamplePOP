@@ -76,20 +76,18 @@ namespace SamplePOP
             }
         }
 
-
-		public void EnterExsistingUser(string username, string password)
-		{
+        public void EnterExsistingUser(string username, string password)
+        {
             App.ClearText();
-			App.EnterText(passwordField, password);
+            App.EnterText(passwordField, password);
             App.Screenshot("We 'Entered' our password");
 
-			App.DismissKeyboard();
+            App.DismissKeyboard();
             App.Screenshot("Dismissed Keyboard");
 
-			App.Tap(nextButton);
-			App.WaitForNoElement(progressIndicator);
-
-		}
-
+            App.Tap(nextButton);
+            App.Screenshot("Then we 'Tapped' on the 'Next' Button");
+            App.WaitForNoElement(progressIndicator);
+        }
 	}
 }
