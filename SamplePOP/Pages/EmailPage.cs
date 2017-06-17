@@ -30,6 +30,19 @@ namespace SamplePOP
 
         }
 
+        public void EnterExistingEmail (string username)
+        {
+            App.WaitForElement(emailField);
+            App.Tap(emailField);
+            App.Screenshot("MileIQ Email Entry Field");
+            App.Tap(nextButton);
+            App.Screenshot("Tapped the 'Next' Button");
+        }
+
+        public void CreateNewUser (string username, string password)
+        {
+            
+        }
 
     }
 }
