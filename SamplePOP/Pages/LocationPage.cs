@@ -34,7 +34,11 @@ namespace SamplePOP
             App.Screenshot("Tapped on 'Continue Location' Button");
         }
 
-
+		public void TapOnNotSureLocation()
+		{
+            App.Tap(notSureButton);
+			App.Screenshot("Tapped on 'Continue Location' Button");
+		}
 
     }
 }
