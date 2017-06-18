@@ -26,5 +26,13 @@ namespace SamplePOP
                 DontAllowButton = x => x.Marked("Don't Allow");
 			}
         }
+
+        public void TapOnAllowNotifications()
+        {
+            App.Tap(AllowButton);
+            App.Screenshot("'Tapped' on the 'Allow Notification' Button");
+        }
+
+
     }
 }
