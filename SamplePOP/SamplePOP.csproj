@@ -41,6 +41,7 @@
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="UI.Tests\BaseTest.cs" />
     <Compile Include="UI.Tests\LoginTests.cs" />
+    <Compile Include="Pages\LocationPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
