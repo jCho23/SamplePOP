@@ -34,13 +34,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests.cs" />
     <Compile Include="AppInitializer.cs" />
     <Compile Include="Pages\WelcomePage.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\EmailPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="UI.Tests\BaseTest.cs" />
+    <Compile Include="UI.Tests\LoginTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
