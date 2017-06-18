@@ -18,7 +18,13 @@ namespace SamplePOP.UI.Tests
         [Test]
         public void CreateNewUserAndLogin()
         {
+			//Arrange
+			var username = _username;
+			var password = "test";
 
-        }
+            //Act
+
+            //Assert
+		}
     }
 }
