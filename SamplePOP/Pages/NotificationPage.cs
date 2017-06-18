@@ -12,6 +12,8 @@ namespace SamplePOP
     {
 		readonly Query AllowButton;
 		readonly Query DontAllowButton;
+		readonly Query dialogNotificationConfirmationYesButton;
+		readonly Query dialogNotificationConfirmationNoButton;
 
         public NotificationPage(IApp app, Platform platform) : base(app, platform)
         {
