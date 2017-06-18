@@ -2,12 +2,12 @@
 using Xamarin.UITest;
 using NUnit.Framework;
 
-namespace SamplePOP.UI.Tests
+namespace SamplePOP
 {
     [Category("LoginTests")]
     public class LoginTests : BaseTest
     {
-        const string _username = "ab.low22@gmail.com";
+        const string _usernameEmail = "ab.low22@gmail.com";
         const string _password = "Xamarinrocks";
 
         public LoginTests(Platform platform)
@@ -19,12 +19,20 @@ namespace SamplePOP.UI.Tests
         public void CreateNewUserAndLogin()
         {
 			//Arrange
-			var username = _username;
+			var usernameEmail = _usernameEmail;
 			var password = "test";
 
             //Act
+            WelcomePage.TapGetStartedButton();
+            EmailPage.EnterNewEmail(usernameEmail);
+            LoginPage.CreateNewUser(password);
 
             //Assert
 		}
+
+
+
+
+
     }
 }

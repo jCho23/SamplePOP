@@ -39,7 +39,7 @@ namespace SamplePOP
             }
         }
 
-        public void CreateNewUser (string username, string password)
+        public void CreateNewUser (string password)
         {
             if (OnAndroid)
             {

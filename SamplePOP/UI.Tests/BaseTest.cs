@@ -3,7 +3,7 @@
 using Xamarin.UITest;
 using SamplePOP;
 
-namespace UITestSampleApp.UITests
+namespace SamplePOP
 {
 	[TestFixture(Platform.Android)]
 	[TestFixture(Platform.iOS)]
