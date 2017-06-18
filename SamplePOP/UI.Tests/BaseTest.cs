@@ -3,6 +3,7 @@
 using Xamarin.UITest;
 using SamplePOP;
 
+
 namespace SamplePOP
 {
 	[TestFixture(Platform.Android)]
@@ -17,6 +18,7 @@ namespace SamplePOP
         protected EmailPage EmailPage;
         protected LoginPage LoginPage;
         protected LocationPage LocationPage;
+        protected NotificationPage NotificationPage;
 
 
 		protected BaseTest(Platform platform) => Platform = platform;
@@ -31,6 +33,7 @@ namespace SamplePOP
             EmailPage = new EmailPage(App, Platform);
             LoginPage = new LoginPage(App, Platform);
             LocationPage = new LocationPage(App, Platform);
+            NotificationPage = new NotificationPage(App, Platform);
 		}
 	}
 }

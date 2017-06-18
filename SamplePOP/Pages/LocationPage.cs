@@ -27,8 +27,8 @@ namespace SamplePOP
 			{
                 notSureButton = x => x.Marked("Not Sure");
                 continueButton = x => x.Marked("Continue");
-                dialogLocationConfirmationYesButton = x => x.Marked("Continue");
-                dialogLocationConfirmationNoButton = x => x.Marked("Continue");
+                dialogLocationConfirmationYesButton = x => x.Marked("Allow");
+                dialogLocationConfirmationNoButton = x => x.Marked("Don't Allow");
 			}
 
         }
