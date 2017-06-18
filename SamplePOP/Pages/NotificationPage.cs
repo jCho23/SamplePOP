@@ -10,11 +10,21 @@ namespace SamplePOP
 {
     public class NotificationPage : BasePage
     {
-		readonly Query Allow;
-		readonly Query DontAllow;
+		readonly Query AllowButton;
+		readonly Query DontAllowButton;
 
         public NotificationPage(IApp app, Platform platform) : base(app, platform)
         {
+			if (OnAndroid)
+			{
+
+			}
+
+			if (OniOS)
+			{
+                AllowButton = x => x.Marked("Allow");
+                DontAllowButton = x => x.Marked("Don't Allow");
+			}
         }
     }
 }
