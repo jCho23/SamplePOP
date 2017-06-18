@@ -10,11 +10,21 @@ namespace SamplePOP
 {
     public class LocationPage : BasePage
     {
-
-
+        readonly Query notSureButton;
+        readonly Query ContinueButton;
 
         public LocationPage(IApp app, Platform platform) : base(app, platform)
         {
+			if (OnAndroid)
+			{
+
+			}
+
+			if (OniOS)
+			{
+                notSureButton = x => x.Marked("Not Sure");
+			}
+
         }
     }
 }
