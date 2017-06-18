@@ -16,6 +16,7 @@ namespace SamplePOP
         protected WelcomePage WelcomePage;
         protected EmailPage EmailPage;
         protected LoginPage LoginPage;
+        protected LocationPage LocationPage;
 
 
 		protected BaseTest(Platform platform) => Platform = platform;
@@ -29,6 +30,7 @@ namespace SamplePOP
             WelcomePage = new WelcomePage(App, Platform);
             EmailPage = new EmailPage(App, Platform);
             LoginPage = new LoginPage(App, Platform);
+            LocationPage = new LocationPage(App, Platform);
 		}
 	}
 }

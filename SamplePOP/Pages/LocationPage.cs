@@ -17,7 +17,8 @@ namespace SamplePOP
         {
 			if (OnAndroid)
 			{
-
+				//notSureButton = x => x.Marked("Not Sure");
+				//continueButton = x => x.Marked("Continue");
 			}
 
 			if (OniOS)
