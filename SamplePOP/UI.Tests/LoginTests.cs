@@ -30,7 +30,11 @@ namespace SamplePOP
             //Assert
 		}
 
-
+        [Test]
+        public void Repl()
+        {
+            App.Repl();
+        }
 
 
 

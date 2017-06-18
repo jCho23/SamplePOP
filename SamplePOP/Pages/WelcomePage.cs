@@ -26,7 +26,7 @@ namespace SamplePOP
            
 		}
 
-        public void TapGetStartedButton(string text)
+        public void TapGetStartedButton()
         {
             App.ClearText();
             App.Tap(getStartedBtn);
