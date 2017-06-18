@@ -12,6 +12,8 @@ namespace SamplePOP
     {
         readonly Query notSureButton;
         readonly Query continueButton;
+        readonly Query dialogLocationConfirmationYesButton;
+        readonly Query dialogLocationConfirmationNoButton;
 
         public LocationPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -25,6 +27,8 @@ namespace SamplePOP
 			{
                 notSureButton = x => x.Marked("Not Sure");
                 continueButton = x => x.Marked("Continue");
+                dialogLocationConfirmationYesButton = x => x.Marked("Continue");
+                dialogLocationConfirmationNoButton = x => x.Marked("Continue");
 			}
 
         }
