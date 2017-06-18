@@ -27,5 +27,14 @@ namespace SamplePOP
 			}
 
         }
+
+        public void TapOnContinueLocation()
+        {
+            App.Tap(continueButton);
+            App.Screenshot("Tapped on 'Continue Location' Button");
+        }
+
+
+
     }
 }
