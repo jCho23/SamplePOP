@@ -14,6 +14,7 @@ namespace SamplePOP
         readonly Query nextButton;
         readonly Query backButton;
 
+
         public EmailPage(IApp app, Platform platform) : base(app, platform)
         {
             if (OnAndroid)

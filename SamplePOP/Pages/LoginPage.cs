@@ -87,7 +87,7 @@ namespace SamplePOP
 
             App.Tap(nextButton);
             App.Screenshot("Then we 'Tapped' on the 'Next' Button");
-            App.WaitForNoElement(progressIndicator);
+            //App.WaitForNoElement(progressIndicator);
         }
 	}
 }
