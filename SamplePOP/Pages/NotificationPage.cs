@@ -21,12 +21,17 @@ namespace SamplePOP
 			{
 				//AllowButton = x => x.Marked("Allow");
 				//DontAllowButton = x => x.Marked("Don't Allow");
+				//dialogNotificationConfirmationYesButton = x => x.Marked("Allow");
+				//dialogNotificationConfirmationNoButton = x => x.Marked("Don't Allow");
 			}
 
 			if (OniOS)
 			{
                 AllowButton = x => x.Marked("Allow");
                 DontAllowButton = x => x.Marked("Don't Allow");
+                dialogNotificationConfirmationYesButton = x => x.Marked("Allow");
+                dialogNotificationConfirmationNoButton = x => x.Marked("Don't Allow");
+
 			}
         }
 

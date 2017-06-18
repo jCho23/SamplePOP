@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{D9601529-AAB6-4370-8BC5-7BB8D8969F63}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/Pages/WelcomePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/Pages/NotificationPage.cs">
     <Files>
       <File FileName="SamplePOP/Pages/EmailPage.cs" Line="16" Column="9" />
       <File FileName="SamplePOP/AppInitializer.cs" Line="24" Column="46" />
@@ -7,9 +7,8 @@
       <File FileName="SamplePOP/UI.Tests/BaseTest.cs" Line="4" Column="17" />
       <File FileName="SamplePOP/UI.Tests/LoginTests.cs" Line="35" Column="15" />
       <File FileName="SamplePOP/Pages/LoginPage.cs" Line="17" Column="9" />
-      <File FileName="SamplePOP/Pages/LocationPage.cs" Line="13" Column="8" />
-      <File FileName="SamplePOP/Pages/NotificationPage.cs" Line="17" Column="10" />
-      <File FileName="SamplePOP/Pages/WelcomePage.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="SamplePOP/Pages/LocationPage.cs" Line="15" Column="9" />
+      <File FileName="SamplePOP/Pages/NotificationPage.cs" Line="25" Column="75" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
