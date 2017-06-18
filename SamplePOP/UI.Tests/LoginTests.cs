@@ -4,10 +4,21 @@ using NUnit.Framework;
 
 namespace SamplePOP.UI.Tests
 {
-    public class LoginTests
+    [Category("LoginTests")]
+    public class LoginTests : BaseTest
     {
-        public LoginTests()
-        {
-        }
+		const string _username = "ab.low22@gmail.com";
+        const string _password = "Xamarinrocks";
+
+		public LoginTests(Platform platform)
+			: base(platform)
+		{
+		}
+
+
+
+
+
+
     }
 }
