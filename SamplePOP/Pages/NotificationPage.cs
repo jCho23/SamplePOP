@@ -17,7 +17,8 @@ namespace SamplePOP
         {
 			if (OnAndroid)
 			{
-
+				//AllowButton = x => x.Marked("Allow");
+				//DontAllowButton = x => x.Marked("Don't Allow");
 			}
 
 			if (OniOS)
