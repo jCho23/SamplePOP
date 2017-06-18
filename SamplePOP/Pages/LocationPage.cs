@@ -11,7 +11,7 @@ namespace SamplePOP
     public class LocationPage : BasePage
     {
         readonly Query notSureButton;
-        readonly Query ContinueButton;
+        readonly Query continueButton;
 
         public LocationPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -23,6 +23,7 @@ namespace SamplePOP
 			if (OniOS)
 			{
                 notSureButton = x => x.Marked("Not Sure");
+                continueButton = x => x.Marked("Continue");
 			}
 
         }
