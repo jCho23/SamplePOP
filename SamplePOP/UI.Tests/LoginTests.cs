@@ -20,14 +20,14 @@ namespace SamplePOP
         {
 			//Arrange
 			var usernameEmail = _usernameEmail;
-			var password = "test";
+			var password = "Xamarintest";
 
             //Act
             WelcomePage.TapGetStartedButton();
             EmailPage.EnterNewEmail(usernameEmail);
             LoginPage.CreateNewUser(password);
             LocationPage.TapOnContinueLocation();
-
+            NotificationPage.TapOnAllowNotifications();
 
             //Assert
 		}

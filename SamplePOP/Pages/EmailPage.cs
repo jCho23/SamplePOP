@@ -61,5 +61,21 @@ namespace SamplePOP
 			App.Screenshot("Tapped the 'Next' Button");
         }
 
+		public string GetTitle(int timeoutInSeconds = 60)
+		{
+			var title = "Login Page";
+			AppResult[] titleQuery;
+
+			App.WaitForElement(title, "Login Page Did Not Appear", TimeSpan.FromSeconds(timeoutInSeconds));
+
+			if (OniOS)
+                titleQuery = App.Query(x => x.Class("UILabel").Marked("password"));
+			else
+
+                titleQuery = App.Query(x => x.Class("TextView").Marked("password"));
+
+            return titleQuery?.FirstOrDefault()?.Text;
+		}
+
     }
 }
