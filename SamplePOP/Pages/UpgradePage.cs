@@ -32,7 +32,8 @@ namespace SamplePOP
 
         public void TapNotRightNowButton()
         {
-            
+            App.Tap(notRightNowButton);
+            App.Screenshot("Tapped on the 'Not Right Now' Button");
         }
 
 
