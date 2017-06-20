@@ -62,16 +62,16 @@ namespace SamplePOP
 
 		public string GetTitle(int timeoutInSeconds = 60)
 		{
-			var title = "Login Page";
+			var title = "Email Page";
 			AppResult[] titleQuery;
 
-			App.WaitForElement(title, "Login Page Did Not Appear", TimeSpan.FromSeconds(timeoutInSeconds));
+			App.WaitForElement(title, "Email Page Did Not Appear", TimeSpan.FromSeconds(timeoutInSeconds));
 
 			if (OniOS)
-                titleQuery = App.Query(x => x.Class("UILabel").Marked("password"));
+                titleQuery = App.Query(x => x.Class("UILabel").Marked("Email Address"));
 			else
 
-                titleQuery = App.Query(x => x.Class("TextView").Marked("password"));
+                titleQuery = App.Query(x => x.Class("TextView").Marked("Email Address"));
 
             return titleQuery?.FirstOrDefault()?.Text;
 		}
