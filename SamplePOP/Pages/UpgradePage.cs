@@ -10,9 +10,9 @@ namespace SamplePOP
 {
     public class UpgradePage : BasePage
     {
-        readonly Query NotRightNowButton;
-        readonly Query UpgradeMonthButton;
-        readonly Query UpgradeYearButton;
+        readonly Query notRightNowButton;
+        readonly Query upgradeMonthButton;
+        readonly Query upgradeYearButton;
 
         public UpgradePage(IApp app, Platform platform) : base(app, platform)
         {
@@ -25,8 +25,8 @@ namespace SamplePOP
 			if (OniOS)
 			{
 				notRightNowButton = x => x.Marked("Not Sure");
-				continueButton = x => x.Marked("Continue");
-				
+                upgradeMonthButton = x => x.Marked("XXXXXContinue");
+                upgradeYearButton = x => x.Marked("XXXXXXContinue");
 			}
         }
     }
