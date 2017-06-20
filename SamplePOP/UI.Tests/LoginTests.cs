@@ -36,6 +36,13 @@ namespace SamplePOP
 		}
 
         [Test]
+        public void ExistingUserLogin()
+        {
+            
+        }
+
+
+        [Test]
         public void LocalRepl()
         {
             App.Repl();
