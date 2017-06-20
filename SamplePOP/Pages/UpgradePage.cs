@@ -16,6 +16,18 @@ namespace SamplePOP
 
         public UpgradePage(IApp app, Platform platform) : base(app, platform)
         {
+			if (OnAndroid)
+			{
+				//notSureButton = x => x.Marked("Not Sure");
+				//continueButton = x => x.Marked("Continue");
+			}
+
+			if (OniOS)
+			{
+				notRightNowButton = x => x.Marked("Not Sure");
+				continueButton = x => x.Marked("Continue");
+				
+			}
         }
     }
 }

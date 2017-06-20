@@ -4,12 +4,12 @@
       <File FileName="SamplePOP/Pages/EmailPage.cs" Line="68" Column="39" />
       <File FileName="SamplePOP/AppInitializer.cs" Line="24" Column="46" />
       <File FileName="SamplePOP/Pages/BasePage.cs" Line="22" Column="1" />
-      <File FileName="SamplePOP/UI.Tests/BaseTest.cs" Line="4" Column="17" />
+      <File FileName="SamplePOP/UI.Tests/BaseTest.cs" Line="38" Column="58" />
       <File FileName="SamplePOP/UI.Tests/LoginTests.cs" Line="26" Column="18" />
       <File FileName="SamplePOP/Pages/LoginPage.cs" Line="17" Column="9" />
-      <File FileName="SamplePOP/Pages/LocationPage.cs" Line="15" Column="9" />
-      <File FileName="SamplePOP/Pages/NotificationPage.cs" Line="34" Column="17" />
-      <File FileName="SamplePOP/Pages/UpgradePage.cs" Line="2" Column="20" />
+      <File FileName="SamplePOP/Pages/NotificationPage.cs" Line="1" Column="14" />
+      <File FileName="SamplePOP/Pages/UpgradePage.cs" Line="15" Column="42" />
+      <File FileName="SamplePOP/Pages/LocationPage.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
