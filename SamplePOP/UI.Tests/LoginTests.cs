@@ -21,6 +21,7 @@ namespace SamplePOP
 			//Arrange
 			var usernameEmail = _usernameEmail;
 			var password = "Xamarintest";
+            var expectedEmailPageTitle = "Email Page";
 
             //Act
             WelcomePage.TapGetStartedButton();
@@ -29,7 +30,9 @@ namespace SamplePOP
             LocationPage.TapOnContinueLocation();
             NotificationPage.TapOnAllowNotifications();
 
-            //Assert
+			//Assert
+            var actualEmailPageTitle = EmailPage.GetTitle();
+            Assert.AreEqual(expectedEmailPageTitle, actualEmailPageTitle);
 		}
 
         [Test]
