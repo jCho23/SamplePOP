@@ -27,7 +27,7 @@ namespace SamplePOP
             WelcomePage.TapGetStartedButton();
             EmailPage.EnterNewEmail(usernameEmail);
             LoginPage.CreateNewUser(password);
-            LocationPage.TapOnContinueLocation();
+            LocationPage.TapContinueLocation();
             NotificationPage.TapOnAllowNotifications();
 
 			//Assert
