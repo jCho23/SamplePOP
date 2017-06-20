@@ -10,6 +10,10 @@ namespace SamplePOP
 {
     public class UpgradePage : BasePage
     {
+        readonly Query NotRightNowButton;
+        readonly Query UpgradeMonthButton;
+        readonly Query UpgradeYearButton;
+
         public UpgradePage(IApp app, Platform platform) : base(app, platform)
         {
         }
