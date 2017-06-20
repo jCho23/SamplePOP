@@ -36,7 +36,11 @@ namespace SamplePOP
             App.Screenshot("Tapped on the 'Not Right Now' Button");
         }
 
-
+		public void TapUpgradeMonthButton()
+		{
+            App.Tap(upgradeYearButton);
+			App.Screenshot("Tapped on the 'Upgrade Month' Button");
+		}
 
     }
 }
