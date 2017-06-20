@@ -22,7 +22,6 @@ namespace SamplePOP
                 emailField = x => x.Marked("login_username");
                 nextButton = x => x.Marked("button_label");
                 //backButton = x => x.Marked();
-
             }
 
             if (OniOS)
