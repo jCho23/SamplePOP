@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Pages\MileIQ.apk" />
+    <None Include="MileIQ.apk" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
