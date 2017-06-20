@@ -38,8 +38,14 @@ namespace SamplePOP
 
 		public void TapUpgradeMonthButton()
 		{
-            App.Tap(upgradeYearButton);
+            App.Tap(upgradeMonthButton);
 			App.Screenshot("Tapped on the 'Upgrade Month' Button");
+		}
+
+		public void TapUpgradeYearButton()
+		{
+			App.Tap(upgradeYearButton);
+			App.Screenshot("Tapped on the 'Upgrade Year' Button");
 		}
 
     }
