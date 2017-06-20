@@ -19,6 +19,7 @@ namespace SamplePOP
         protected LoginPage LoginPage;
         protected LocationPage LocationPage;
         protected NotificationPage NotificationPage;
+        protected UpgradePage UpgradePage;
 
 
 		protected BaseTest(Platform platform) => Platform = platform;
@@ -34,6 +35,7 @@ namespace SamplePOP
             LoginPage = new LoginPage(App, Platform);
             LocationPage = new LocationPage(App, Platform);
             NotificationPage = new NotificationPage(App, Platform);
+            UpgradePage = new UpgradePage(App, Platform);
 		}
 	}
 }
