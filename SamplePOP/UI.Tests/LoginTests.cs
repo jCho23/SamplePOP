@@ -36,7 +36,7 @@ namespace SamplePOP
 		}
 
         [Test]
-        public void Repl()
+        public void LocalRepl()
         {
             App.Repl();
         }
