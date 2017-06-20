@@ -33,13 +33,13 @@ namespace SamplePOP
 
         }
 
-        public void TapOnContinueLocation()
+        public void TapContinueLocation()
         {
             App.Tap(continueButton);
             App.Screenshot("Tapped on 'Continue Location' Button");
         }
 
-		public void TapOnNotSureLocation()
+		public void TapNotSureLocation()
 		{
             App.Tap(notSureButton);
 			App.Screenshot("Tapped on 'Continue Location' Button");

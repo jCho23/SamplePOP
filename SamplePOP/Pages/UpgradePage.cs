@@ -29,5 +29,13 @@ namespace SamplePOP
                 upgradeYearButton = x => x.Marked("XXXXXXContinue");
 			}
         }
+
+        public void TapNotRightNowButton()
+        {
+            
+        }
+
+
+
     }
 }
