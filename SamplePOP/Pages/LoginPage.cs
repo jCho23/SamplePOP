@@ -73,17 +73,18 @@ namespace SamplePOP
             {
                 App.ClearText();
 				App.EnterText(passwordField, password);
+                App.Screenshot("Entered New User Password");
 				App.DismissKeyboard();
-				App.Screenshot("We have 'Entered' our New User Password");
-
+                App.Screenshot("Dismissed Keyboard");
+				
 				App.Tap(nextButton);
-                App.Screenshot("Then we 'Tapped' the 'Next' Button");
+                App.Screenshot("Tapped Next Button");
 
 				App.WaitForElement(dialogEmailConfirmationYesButton);
 				App.Screenshot("Email Confirmaiton popup should appear");
 
 				App.Tap(dialogEmailConfirmationYesButton);
-                App.Screenshot("Next we 'Tapped' on the 'Yes' Button");
+                App.Screenshot("Tapped Yes Button");
             }
         }
 
