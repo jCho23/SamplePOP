@@ -60,7 +60,6 @@ namespace SamplePOP
 				App.DismissKeyboard();
                 App.Screenshot("Dismissed Keyboard");
 				
-
 				App.Tap(nextButton);
 				App.Screenshot("Tapped Next Button");
 
