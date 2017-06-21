@@ -40,7 +40,12 @@ namespace SamplePOP
         public void CreateNewUserAndLoginAndroid()
         {
             //Arrange 
+            var usernameEmail = _usernameEmail;
+            var password = "Xamarintest";
+
             //Act
+            LoginPage.CreateNewUser(_usernameEmail, password);
+
             //Assert
         }
 
