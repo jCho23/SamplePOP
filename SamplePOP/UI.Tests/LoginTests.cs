@@ -61,8 +61,13 @@ namespace SamplePOP
         [Test]
         public void ExistingUserLoginAndroid()
         {
-            //Arrange
+			//Arrange
+			var usernameEmail = _usernameEmail;
+			var password = "XamarinRocks";
+
             //Act
+            LoginPage.EnterExsistingUser(_usernameEmail, password);
+
             //Assert
         }
 
