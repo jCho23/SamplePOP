@@ -90,18 +90,45 @@ namespace SamplePOP
             }
         }
 
-        public void EnterExsistingUser(string password)
+        public void EnterExsistingUser(string eMailAddress, string password)
         {
-            App.ClearText();
-            App.EnterText(passwordField, password);
-            App.Screenshot("Entered our password");
+            if (OnAndroid) 
+            {
+                App.Tap(LogInToggle);
+                App.Screenshot("Tapped Log in Toggle");
 
-            App.DismissKeyboard();
-            App.Screenshot("Dismissed Keyboard");
+				App.ClearText();
+				App.Tap(emailField);
+				App.Screenshot("Tapped Email Address Text Field");
+				App.EnterText(eMailAddress);
+				App.Screenshot("Entered exisiting Email Address");
+				App.DismissKeyboard();
+				App.Screenshot("Dismissed Keyboard");
 
-            App.Tap(nextButton);
-            App.Screenshot("Tapped Next Button");
-            //App.WaitForNoElement(progressIndicator);
+				App.EnterText(passwordField, password);
+				App.Screenshot("Entered our password");
+
+				App.DismissKeyboard();
+				App.Screenshot("Dismissed Keyboard");
+
+				App.Tap(nextButton);
+				App.Screenshot("Tapped Next Button");
+				App.WaitForNoElement(progressIndicator);
+			}
+
+            if (OniOS)
+            {
+				App.ClearText();
+				App.EnterText(passwordField, password);
+				App.Screenshot("Entered our password");
+
+				App.DismissKeyboard();
+				App.Screenshot("Dismissed Keyboard");
+
+				App.Tap(nextButton);
+				App.Screenshot("Tapped Next Button"); 
+			}
+           
         }
 	}
 }
