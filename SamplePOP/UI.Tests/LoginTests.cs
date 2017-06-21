@@ -29,6 +29,7 @@ namespace SamplePOP
             LoginPage.CreateNewUser(usernameEmail, password);
             LocationPage.TapContinueLocation();
             NotificationPage.TapOnAllowNotifications();
+            UpgradePage.TapNotRightNowButton();
 
 			//Assert
             var actualEmailPageTitle = EmailPage.GetTitle();
