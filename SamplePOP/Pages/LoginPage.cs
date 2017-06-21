@@ -16,6 +16,8 @@ namespace SamplePOP
 		readonly Query backButton;
         readonly Query dialogEmailConfirmationYesButton;
         readonly Query progressIndicator;
+        readonly Query LogInToggle;
+        readonly Query SignInToggle;
 
         public LoginPage(IApp app, Platform platform) : base(app, platform)
         {
@@ -24,7 +26,6 @@ namespace SamplePOP
 				emailField = x => x.Marked("login_username");
 				passwordField = x => x.Marked("login_password");
 				nextButton = x => x.Marked("button_label");
-				//backButton = x => x.Marked();
                 dialogEmailConfirmationYesButton = x => x.Marked("button1");
                 progressIndicator = x => x.Marked("progress");
 			}
@@ -43,6 +44,8 @@ namespace SamplePOP
         {
             if (OnAndroid)
             {
+
+
                 App.ClearText();
 				App.EnterText(passwordField, password);
 				App.DismissKeyboard();
