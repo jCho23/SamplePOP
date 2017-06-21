@@ -46,26 +46,27 @@ namespace SamplePOP
             {
                 App.ClearText();
                 App.Tap(emailField);
-
+                App.Screenshot("Tapped Email Address Text Field");
                 App.EnterText(eMailAddress);
-                App.Screenshot("Entered in our 'Email Address'");
+                App.Screenshot("Entered new 'Email Address'");
                 App.DismissKeyboard();
                 App.Screenshot("Dismissed Keyboard");
 
-                App.ClearText();
 				App.EnterText(passwordField, password);
+                App.ClearText();
+                App.Screenshot("Entered New User Password");
 				App.DismissKeyboard();
                 App.Screenshot("Dismissed Keyboard");
-				App.Screenshot("We have 'Entered' our New User Password");
+				
 
 				App.Tap(nextButton);
-				App.Screenshot("Then we 'Tapped' the 'Next' Button");
+				App.Screenshot("Tapped Next Button");
 
 				App.WaitForElement(dialogEmailConfirmationYesButton);
 				App.Screenshot("Email Confirmaiton popup should appear");
 
 				App.Tap(dialogEmailConfirmationYesButton);
-				App.Screenshot("Next we 'Tapped' on the 'Yes' Button");
+				App.Screenshot("Tapped Yes Button");
             }
 
             if (OniOS)
