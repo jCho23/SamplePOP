@@ -92,13 +92,13 @@ namespace SamplePOP
         {
             App.ClearText();
             App.EnterText(passwordField, password);
-            App.Screenshot("We 'Entered' our password");
+            App.Screenshot("Entered our password");
 
             App.DismissKeyboard();
             App.Screenshot("Dismissed Keyboard");
 
             App.Tap(nextButton);
-            App.Screenshot("Then we 'Tapped' on the 'Next' Button");
+            App.Screenshot("Tapped Next Button");
             //App.WaitForNoElement(progressIndicator);
         }
 	}
