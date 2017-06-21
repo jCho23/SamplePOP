@@ -28,6 +28,8 @@ namespace SamplePOP
 				nextButton = x => x.Marked("button_label");
                 dialogEmailConfirmationYesButton = x => x.Marked("button1");
                 progressIndicator = x => x.Marked("progress");
+                LogInToggle = x => x.Marked("login_header_login");
+                SignInToggle = x => x.Marked("login_header_signup");
 			}
 
             if (OniOS)
