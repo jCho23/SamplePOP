@@ -39,7 +39,9 @@ namespace SamplePOP
         [Test]
         public void CreateNewUserAndLoginAndroid()
         {
-            
+            //Arrange 
+            //Act
+            //Assert
         }
 
 
