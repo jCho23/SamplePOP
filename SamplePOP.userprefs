@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{D9601529-AAB6-4370-8BC5-7BB8D8969F63}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/UI.Tests/LoginTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/Pages/BasePage.cs">
     <Files>
       <File FileName="SamplePOP/Pages/EmailPage.cs" Line="68" Column="39" />
-      <File FileName="SamplePOP/AppInitializer.cs" Line="24" Column="46" />
+      <File FileName="SamplePOP/AppInitializer.cs" Line="42" Column="30" />
       <File FileName="SamplePOP/Pages/BasePage.cs" Line="22" Column="1" />
       <File FileName="SamplePOP/UI.Tests/BaseTest.cs" Line="39" Column="4" />
-      <File FileName="SamplePOP/UI.Tests/LoginTests.cs" Line="31" Column="56" />
+      <File FileName="SamplePOP/UI.Tests/LoginTests.cs" Line="17" Column="1" />
       <File FileName="SamplePOP/Pages/LoginPage.cs" Line="17" Column="9" />
       <File FileName="SamplePOP/Pages/NotificationPage.cs" Line="1" Column="14" />
       <File FileName="SamplePOP/Pages/UpgradePage.cs" Line="23" Column="5" />
