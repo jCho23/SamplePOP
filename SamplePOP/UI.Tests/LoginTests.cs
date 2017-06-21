@@ -50,12 +50,18 @@ namespace SamplePOP
         }
 
 
-
         [Test]
-        public void ExistingUserLogin()
+        public void ExistingUserLoginiOS()
         {
             
         }
+
+        [Test]
+        public void ExistingUserLoginAndroid()
+        {
+            
+        }
+
 
 
         [Test]
