@@ -16,7 +16,7 @@ namespace SamplePOP
         }
 
         [Test]
-        public void CreateNewUserAndLogin()
+        public void CreateNewUserAndLoginiOS()
         {
 			//Arrange
 			var usernameEmail = _usernameEmail;
@@ -35,6 +35,14 @@ namespace SamplePOP
             var actualEmailPageTitle = EmailPage.GetTitle();
             Assert.AreEqual(expectedEmailPageTitle, actualEmailPageTitle);
 		}
+
+        [Test]
+        public void CreateNewUserAndLoginAndroid()
+        {
+            
+        }
+
+
 
         [Test]
         public void ExistingUserLogin()
