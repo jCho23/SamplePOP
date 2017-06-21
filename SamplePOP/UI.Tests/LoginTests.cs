@@ -53,8 +53,10 @@ namespace SamplePOP
         [Test]
         public void ExistingUserLoginiOS()
         {
-            
-        }
+			//Arrange
+			//Act
+			//Assert
+		}
 
         [Test]
         public void ExistingUserLoginAndroid()
