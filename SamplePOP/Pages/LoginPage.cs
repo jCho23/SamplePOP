@@ -40,15 +40,22 @@ namespace SamplePOP
             }
         }
 
-        public void CreateNewUser (string password)
+        public void CreateNewUser (string eMailAddress, string password)
         {
             if (OnAndroid)
             {
+                App.ClearText();
+                App.Tap(emailField);
 
+                App.EnterText(eMailAddress);
+                App.Screenshot("Entered in our 'Email Address'");
+                App.DismissKeyboard();
+                App.Screenshot("Dismissed Keyboard");
 
                 App.ClearText();
 				App.EnterText(passwordField, password);
 				App.DismissKeyboard();
+                App.Screenshot("Dismissed Keyboard");
 				App.Screenshot("We have 'Entered' our New User Password");
 
 				App.Tap(nextButton);
