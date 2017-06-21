@@ -27,17 +27,21 @@ namespace SamplePOP
                     .Android
                     // TODO: Update this path to point to your Android app and uncomment the
                     // code if the app is not included in the solution.
-                    //.ApkFile ("../../../Droid/bin/Debug/xamarinforms.apk")
-                    .ApkFile("MileIQ.apk")
+
+                    //2 Ways to point the APK to your project
+                    .ApkFile ("/Users/junecho/Desktop/Demos/MileIQ.apk")
+                    //.ApkFile("MileIQ.apk")
                     .StartApp();
             }
 
             return ConfigureApp
                 .iOS
-                // TODO: Update this path to point to your iOS app and uncomment the
-                // code if the app is not included in the solution.
-                //.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
-                .InstalledApp("com.mobiledatalabs.mileiq")
+				// TODO: Update this path to point to your iOS app and uncomment the
+				// code if the app is not included in the solution.
+
+				//2 Ways to point the iOS to your project
+				//.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
+				.InstalledApp("com.mobiledatalabs.mileiq")
                 .StartApp();
         }
     }

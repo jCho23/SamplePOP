@@ -4,7 +4,6 @@
 /Users/junecho/Projects/SamplePOP/SamplePOP/bin/Debug/Xamarin.UITest.dll
 /Users/junecho/Projects/SamplePOP/SamplePOP/bin/Debug/nunit.framework.xml
 /Users/junecho/Projects/SamplePOP/SamplePOP/bin/Debug/Xamarin.UITest.xml
-/Users/junecho/Projects/SamplePOP/SamplePOP/obj/Debug/SamplePOP.csprojResolveAssemblyReference.cache
 /Users/junecho/Projects/SamplePOP/SamplePOP/obj/Debug/SamplePOP.csproj.CoreCompileInputs.cache
 /Users/junecho/Projects/SamplePOP/SamplePOP/obj/Debug/SamplePOP.dll
 /Users/junecho/Projects/SamplePOP/SamplePOP/obj/Debug/SamplePOP.pdb
