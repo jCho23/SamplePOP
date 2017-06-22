@@ -29,7 +29,9 @@ namespace SamplePOP
                     // code if the app is not included in the solution.
 
                     //2 Ways to point the APK to your project
+                    //Path
                     .ApkFile ("/Users/junecho/Desktop/Demos/MileIQ.apk")
+                    //APK in Project
                     //.ApkFile("MileIQ.apk")
                     .StartApp();
             }

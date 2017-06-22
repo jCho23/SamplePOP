@@ -18,6 +18,8 @@ namespace SamplePOP
         [Test]
         public void CreateNewUserAndLoginiOS()
         {
+            //Using Arrange, 
+
 			//Arrange
 			var usernameEmail = _usernameEmail;
 			var password = "Xamarintest";
