@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="SamplePOP/AppInitializer.cs">
     <Files>
       <File FileName="SamplePOP/Pages/EmailPage.cs" Line="23" Column="54" />
-      <File FileName="SamplePOP/AppInitializer.cs" Line="32" Column="71" />
+      <File FileName="SamplePOP/AppInitializer.cs" Line="36" Column="33" />
       <File FileName="SamplePOP/Pages/BasePage.cs" Line="22" Column="1" />
       <File FileName="SamplePOP/UI.Tests/BaseTest.cs" Line="39" Column="4" />
       <File FileName="SamplePOP/UI.Tests/LoginTests.cs" Line="21" Column="30" />

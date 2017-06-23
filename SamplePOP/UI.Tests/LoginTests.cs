@@ -18,7 +18,7 @@ namespace SamplePOP
         [Test]
         public void CreateNewUserAndLoginiOS()
         {
-            //Using Arrange, 
+            //Using Arrange, Act, Assert is a great way to keep your tests in order
 
 			//Arrange
 			var usernameEmail = _usernameEmail;
