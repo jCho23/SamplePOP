@@ -60,10 +60,12 @@ namespace SamplePOP
         {
             //Arrange
             var ExistingEmail = _usernameEmail;
+
+
             //Act
             WelcomePage.TapGetStartedButton();
             EmailPage.EnterExistingEmail(ExistingEmail);
-            LoginPage.EnterExsistingUser()
+           
 
 
 			//Assert
