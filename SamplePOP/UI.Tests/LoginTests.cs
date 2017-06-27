@@ -59,9 +59,11 @@ namespace SamplePOP
         public void ExistingUserLoginiOS()
         {
             //Arrange
-
+            var ExistingEmail = _usernameEmail;
             //Act
             WelcomePage.TapGetStartedButton();
+            EmailPage.EnterExistingEmail(ExistingEmail);
+
 
 			//Assert
 		}
