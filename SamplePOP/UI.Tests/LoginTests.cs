@@ -58,8 +58,11 @@ namespace SamplePOP
         [Test]
         public void ExistingUserLoginiOS()
         {
-			//Arrange
-			//Act
+            //Arrange
+
+            //Act
+            WelcomePage.TapGetStartedButton();
+
 			//Assert
 		}
 
@@ -76,15 +79,10 @@ namespace SamplePOP
             //Assert
         }
 
-
-
         [Test]
         public void LocalRepl()
         {
             App.Repl();
         }
-
-
-
     }
 }
