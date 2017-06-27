@@ -63,6 +63,7 @@ namespace SamplePOP
             //Act
             WelcomePage.TapGetStartedButton();
             EmailPage.EnterExistingEmail(ExistingEmail);
+            LoginPage.EnterExsistingUser()
 
 
 			//Assert
