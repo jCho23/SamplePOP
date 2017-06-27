@@ -18,11 +18,13 @@ namespace SamplePOP
         [Test]
         public void CreateNewUserAndLoginiOS()
         {
+
             //Using Arrange, Act, Assert is a great way to keep your tests in order
 
-			//Arrange
-			var usernameEmail = _usernameEmail;
-			var password = "Xamarintest";
+            //Arrange
+            #region
+            var usernameEmail = _usernameEmail;
+            var password = "Xamarintest";
             var expectedEmailPageTitle = "Email Page";
 
             //Act
@@ -33,10 +35,11 @@ namespace SamplePOP
             NotificationPage.TapOnAllowNotifications();
             UpgradePage.TapNotRightNowButton();
 
-			//Assert
+            //Assert
             var actualEmailPageTitle = EmailPage.GetTitle();
             Assert.AreEqual(expectedEmailPageTitle, actualEmailPageTitle);
-		}
+            #endregion
+        }
 
         [Test]
         public void CreateNewUserAndLoginAndroid()
