@@ -30,7 +30,7 @@ namespace SamplePOP
             //Act
             WelcomePage.TapGetStartedButton();
             EmailPage.EnterNewEmail(usernameEmail);
-            LoginPage.CreateNewUser(usernameEmail, password);
+            LoginPage.CreateNewUserIOS(usernameEmail, password);
             LocationPage.TapContinueLocation();
             NotificationPage.TapOnAllowNotifications();
             UpgradePage.TapNotRightNowButton();
@@ -49,7 +49,7 @@ namespace SamplePOP
             var password = "Xamarintest";
 
             //Act
-            LoginPage.CreateNewUser(_usernameEmail, password);
+            LoginPage.CreateNewUserAndroid(_usernameEmail, password);
 
             //Assert
         }
